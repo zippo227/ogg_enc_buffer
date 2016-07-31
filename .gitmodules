@@ -1,0 +1,3 @@
+[submodule "ogg_ios_android"]
+	path = ogg_ios_android
+	url = git@github.com:zippo227/ogg_ios_android.git
