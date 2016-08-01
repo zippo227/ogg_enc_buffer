@@ -17,6 +17,8 @@
 [Rr]eleases/
 x64/
 x86/
+ARM/
+ARM64/
 bld/
 [Bb]in/
 [Oo]bj/
@@ -69,6 +71,7 @@ artifacts/
 *.pidb
 *.svclog
 *.scc
+*.so
 
 # Chutzpah Test files
 _Chutzpah*

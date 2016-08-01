@@ -10,7 +10,7 @@ namespace AudioTools
 {
 	StreamEncoder::StreamEncoder()
 	{
-		//Initialize the info
+		//Initialize the info 
 		vorbis_info_init(&mVorbisInfo);
 
 		if (vorbis_encode_init(&mVorbisInfo, 2, 44100, 100, 80, 60) != 0)
