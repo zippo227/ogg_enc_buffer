@@ -1,9 +1,9 @@
 // OggEncoder.h - Contains declaration of Function class
 #pragma once
 
-#ifdef __cplusplus
+//Functions to be exposed in these libraries
+
 extern "C" {
-#endif
 		
 	extern bool InitEncoder();
 	
@@ -11,8 +11,5 @@ extern "C" {
 	
 	// Length of encoded bytes
 	extern int EncodeBuffer(void* buffer, int length);
-
-#ifdef __cplusplus
 }
-#endif
 

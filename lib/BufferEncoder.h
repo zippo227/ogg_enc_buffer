@@ -1,11 +1,17 @@
 #pragma once
 
+
+#ifdef __cplusplus
 extern "C"
 {
+#endif
+
 #include <vorbis/vorbisenc.h>
 #include <ogg/ogg.h>
-}
 
+#ifdef __cplusplus
+}
+#endif
 
 //Based on steps from: https://xiph.org/vorbis/doc/libvorbis/overview.html
 

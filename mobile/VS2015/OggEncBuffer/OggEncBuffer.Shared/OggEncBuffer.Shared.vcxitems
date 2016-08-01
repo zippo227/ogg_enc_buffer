@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{3c747ec2-b542-47be-b25e-7a2e52323356}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\lib\BufferEncoder.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\lib\OggBuffEnc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\lib\BufferEncoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\lib\OggBuffEnc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\ogg_ios_android\libogg\include\ogg\ogg.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\vorbisenc.h" />
+  </ItemGroup>
+</Project>

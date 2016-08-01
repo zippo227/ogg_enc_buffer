@@ -1,9 +1,10 @@
-#include "stdafx.h"
-
 extern "C"
 {
-#include "StreamEncoder.h"
+#include <vorbis/vorbisenc.h>
+#include <ogg/ogg.h>
 }
+
+#include "BufferEncoder.h"
 
 namespace AudioTools
 {

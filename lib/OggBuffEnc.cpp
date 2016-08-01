@@ -1,21 +1,20 @@
-#include "stdafx.h"
-#include "OggEncoder.h"
-#include "StreamEncoder.h"
+#include "OggBuffEnc.h"
+#include "BufferEncoder.h"
 
-AudioTools::StreamEncoder* streamEnc = nullptr;
+AudioTools::StreamEncoder* streamEnc = NULL;
 
 bool InitEncoder()
 {
 	streamEnc = new AudioTools::StreamEncoder();
 
-	bool suc = (streamEnc != nullptr);
+	bool suc = (streamEnc != NULL);
 	return suc;
 }
 
 int EncodeBuffer(void* buffer, int length)
 {
 	int numSamplesProcessed = 0;
-	if (streamEnc != nullptr)
+	if (streamEnc != NULL)
 	{
 		numSamplesProcessed = streamEnc->EncodeBuffer(buffer, length);
 	}
@@ -25,11 +24,11 @@ int EncodeBuffer(void* buffer, int length)
 
 bool CloseEncoder()
 {
-	if (streamEnc != nullptr)
+	if (streamEnc != NULL)
 	{
 		//TODO: Submit empty buffer to close
 		delete streamEnc;
-		streamEnc = nullptr;
+		streamEnc = NULL;
 		return true;
 	}
 
