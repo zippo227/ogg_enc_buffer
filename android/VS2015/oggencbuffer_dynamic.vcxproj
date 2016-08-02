@@ -89,18 +89,26 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>
+    </LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <LibraryPath>
+    </LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <LibraryPath>
+    </LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <LibraryPath>
+    </LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
   </PropertyGroup>
@@ -109,15 +117,22 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\..\ogg_ios_android\libogg\include;..\..\ogg_ios_android\libvorbis\include;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>
+      </AdditionalOptions>
     </ClCompile>
     <PreLinkEvent>
-      <Command>xcopy $(SolutionDir)..\..\ogg_ios_android\libvorbis\android\VS2015\$(Platform)\$(Configuration)\libvorbis_dynamic.so $(ProjectDir)libvorbis_dynamic.so* /Y</Command>
+      <Command>xcopy $(SolutionDir)..\..\ogg_ios_android\libvorbis\android\VS2015\$(Platform)\$(Configuration)\libogg_static.a $(ProjectDir)libogg_static.a* /Y
+xcopy $(SolutionDir)$(Platform)\$(Configuration)\libvorbis_static.a $(SolutionDir)libvorbis_static.a* /Y
+</Command>
     </PreLinkEvent>
     <PreLinkEvent>
-      <Message>Copy the vorbis lib</Message>
+      <Message>
+      </Message>
     </PreLinkEvent>
     <Link>
-      <AdditionalDependencies>libvorbis_dynamic.so;</AdditionalDependencies>
+      <AdditionalDependencies>libvorbis_static.a;libogg_static.a;</AdditionalDependencies>
+      <AdditionalOptions>-lm -llog</AdditionalOptions>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\x86_64-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -131,15 +146,22 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\..\ogg_ios_android\libogg\include;..\..\ogg_ios_android\libvorbis\include;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>
+      </AdditionalOptions>
     </ClCompile>
     <PreLinkEvent>
-      <Command>xcopy $(SolutionDir)..\..\ogg_ios_android\libvorbis\android\VS2015\$(Platform)\$(Configuration)\libvorbis_dynamic.so $(ProjectDir)libvorbis_dynamic.so* /Y</Command>
+      <Command>xcopy $(SolutionDir)..\..\ogg_ios_android\libvorbis\android\VS2015\$(Platform)\$(Configuration)\libogg_static.a $(ProjectDir)libogg_static.a* /Y
+xcopy $(SolutionDir)$(Platform)\$(Configuration)\libvorbis_static.a $(SolutionDir)libvorbis_static.a* /Y
+</Command>
     </PreLinkEvent>
     <PreLinkEvent>
-      <Message>Copy the vorbis lib</Message>
+      <Message>
+      </Message>
     </PreLinkEvent>
     <Link>
-      <AdditionalDependencies>libvorbis_dynamic.so;</AdditionalDependencies>
+      <AdditionalDependencies>libvorbis_static.a;libogg_static.a;</AdditionalDependencies>
+      <AdditionalOptions>-lm -llog</AdditionalOptions>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
@@ -153,15 +175,22 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\..\ogg_ios_android\libogg\include;..\..\ogg_ios_android\libvorbis\include;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>
+      </AdditionalOptions>
     </ClCompile>
     <PreLinkEvent>
-      <Command>xcopy $(SolutionDir)..\..\ogg_ios_android\libvorbis\android\VS2015\$(Platform)\$(Configuration)\libvorbis_dynamic.so $(ProjectDir)libvorbis_dynamic.so* /Y</Command>
+      <Command>xcopy $(SolutionDir)..\..\ogg_ios_android\libvorbis\android\VS2015\$(Platform)\$(Configuration)\libogg_static.a $(ProjectDir)libogg_static.a* /Y
+xcopy $(SolutionDir)$(Platform)\$(Configuration)\libvorbis_static.a $(SolutionDir)libvorbis_static.a* /Y
+</Command>
     </PreLinkEvent>
     <PreLinkEvent>
-      <Message>Copy the vorbis lib</Message>
+      <Message>
+      </Message>
     </PreLinkEvent>
     <Link>
-      <AdditionalDependencies>libvorbis_dynamic.so;</AdditionalDependencies>
+      <AdditionalDependencies>libvorbis_static.a;libogg_static.a;</AdditionalDependencies>
+      <AdditionalOptions>-lm -llog</AdditionalOptions>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
@@ -175,15 +204,22 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\..\ogg_ios_android\libogg\include;..\..\ogg_ios_android\libvorbis\include;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>
+      </AdditionalOptions>
     </ClCompile>
     <PreLinkEvent>
-      <Command>xcopy $(SolutionDir)..\..\ogg_ios_android\libvorbis\android\VS2015\$(Platform)\$(Configuration)\libvorbis_dynamic.so $(ProjectDir)libvorbis_dynamic.so* /Y</Command>
+      <Command>xcopy $(SolutionDir)..\..\ogg_ios_android\libvorbis\android\VS2015\$(Platform)\$(Configuration)\libogg_static.a $(ProjectDir)libogg_static.a* /Y
+xcopy $(SolutionDir)$(Platform)\$(Configuration)\libvorbis_static.a $(SolutionDir)libvorbis_static.a* /Y
+</Command>
     </PreLinkEvent>
     <PreLinkEvent>
-      <Message>Copy the vorbis lib</Message>
+      <Message>
+      </Message>
     </PreLinkEvent>
     <Link>
-      <AdditionalDependencies>libvorbis_dynamic.so;</AdditionalDependencies>
+      <AdditionalDependencies>libvorbis_static.a;libogg_static.a;</AdditionalDependencies>
+      <AdditionalOptions>-lm -llog</AdditionalOptions>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\$(PlatformShortName);$(StlLibraryPath)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -200,6 +236,11 @@
   <ItemGroup>
     <ClCompile Include="..\..\lib\BufferEncoder.cpp" />
     <ClCompile Include="..\..\lib\OggBuffEnc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ogg_ios_android\libvorbis\android\VS2015\libvorbis\libvorbis_static.vcxproj">
+      <Project>{2b3eea6f-eaa0-4968-a09a-871ebba840d5}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

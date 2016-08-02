@@ -13,14 +13,4 @@
   <ItemGroup>
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\lib\BufferEncoder.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\lib\OggBuffEnc.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\lib\BufferEncoder.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\lib\OggBuffEnc.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\ogg_ios_android\libogg\include\ogg\ogg.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\vorbisenc.h" />
-  </ItemGroup>
 </Project>

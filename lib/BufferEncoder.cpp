@@ -5,35 +5,70 @@ extern "C"
 }
 
 #include "BufferEncoder.h"
+#include <iostream>
+
+using namespace std;
 
 namespace AudioTools
 {
+	void Write(const char * error)
+	{
+		cout << error;
+	}
+
+	bool ErrorCheck(int code)
+	{
+		switch (code)
+		{
+		case 0:
+			return false;
+		case OV_EFAULT:
+			Write("OV_EFAULT");
+			break;
+		case OV_EIMPL:
+			Write("OV_EIMPL");
+			break;
+		default:
+			break;
+		}
+
+		return true;
+	}
+
 	StreamEncoder::StreamEncoder()
 	{
 		//Initialize the info 
 		vorbis_info_init(&mVorbisInfo);
 
-		if (vorbis_encode_init(&mVorbisInfo, 2, 44100, 100, 80, 60) != 0)
+		if (ErrorCheck(vorbis_encode_init(&mVorbisInfo, 2, 44100, 100, 80, 60)) == true)
 		{
 			//Error
+			Write("vorbis_encode_init error");
+			return;
 		}
 
-		if (vorbis_analysis_init(&mVorbisDspState, &mVorbisInfo) != 0)
+		if (ErrorCheck(vorbis_analysis_init(&mVorbisDspState, &mVorbisInfo)) == true)
 		{
 			//Error
+			Write("vorbis_analysis_init error");
+			return;
 		}
 
 		vorbis_comment_init(&mVorbisComment);
 		//vorbis_comment_add(&mVorbisComment, "Comments");
-
-		if (vorbis_analysis_headerout(&mVorbisDspState, &mVorbisComment, &mOggPacketIdentification, &mOggPacketComment, &mOggPacketCodes) != 0)
+		int vahCode = vorbis_analysis_headerout(&mVorbisDspState, &mVorbisComment, &mOggPacketIdentification, &mOggPacketComment, &mOggPacketCodes);
+		if (ErrorCheck(vahCode) == true)
 		{
 			//Error
+			Write("vorbis_analysis_init error");
+			return;
 		}
 
-		if (vorbis_block_init(&mVorbisDspState, &mVorbisBlock) != 0)
+		if (ErrorCheck(vorbis_block_init(&mVorbisDspState, &mVorbisBlock)) == true)
 		{
 			//Error
+			Write("vorbis_block_init error");
+			return;
 		}
 	}
 
@@ -52,13 +87,15 @@ namespace AudioTools
 		float** allocatedChannels = vorbis_analysis_buffer(&mVorbisDspState, length);
 
 		//I'm not sure of the way that the samples inside of buffer are laid out
-		float** bufferChannels = static_cast<float**>(buffer);
+		float* bufferChannels = static_cast<float*>(buffer);
 
-		for (int i = 0; i < length; i++)
+		Write("Casted the buffer channels");
+
+		for (int i = 0; i < length; i+=2)
 		{
 			//Assume two channels here
-			allocatedChannels[0][i] = bufferChannels[0][i];
-			allocatedChannels[1][i] = bufferChannels[1][i];
+			allocatedChannels[0][i] = bufferChannels[i];
+			allocatedChannels[1][i] = bufferChannels[i+1];
 		}
 
 		if (vorbis_analysis_wrote(&mVorbisDspState, length) != 0)

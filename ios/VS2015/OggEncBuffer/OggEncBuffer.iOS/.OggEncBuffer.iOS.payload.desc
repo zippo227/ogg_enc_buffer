@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<payload>
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\ios\VS2015\OggEncBuffer\OggEncBuffer.iOS\ARM\Debug\OggEncBuffer.iOS.xcodeproj\project.pbxproj" changed="2016-08-02T09:57:39.1230798-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\ios\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\lib\BufferEncoder.cpp" changed="2016-08-01T21:38:44.7978559-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\ios\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\lib\OggBuffEnc.cpp" changed="2016-08-01T21:31:14.8870923-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\ios\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\lib\BufferEncoder.h" changed="2016-08-01T14:58:23.8131296-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\ios\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\lib\OggBuffEnc.h" changed="2016-08-01T21:31:47.0042131-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\ios\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\ogg_ios_android\libogg\include\ogg\ogg.h" changed="2016-08-01T14:58:47.5511907-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\ios\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\ogg_ios_android\libogg\include\ogg\os_types.h" changed="2016-08-01T14:58:47.5536857-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\ios\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\codec.h" changed="2016-08-01T14:58:48.5404846-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\ios\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\vorbisenc.h" changed="2016-08-01T14:58:48.5445083-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\ios\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\vorbisfile.h" changed="2016-08-01T14:58:48.5473712-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.iOS\ARM\Debug\OggEncBuffer.iOS.xcodeproj\project.pbxproj" changed="2016-08-02T09:50:34.1737011-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\lib\BufferEncoder.cpp" changed="2016-08-01T21:38:44.7978559-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\lib\OggBuffEnc.cpp" changed="2016-08-01T21:31:14.8870923-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\lib\BufferEncoder.h" changed="2016-08-01T14:58:23.8131296-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\lib\OggBuffEnc.h" changed="2016-08-01T21:31:47.0042131-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\ogg_ios_android\libogg\include\ogg\ogg.h" changed="2016-08-01T14:58:47.5511907-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\ogg_ios_android\libogg\include\ogg\os_types.h" changed="2016-08-01T14:58:47.5536857-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\codec.h" changed="2016-08-01T14:58:48.5404846-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\vorbisenc.h" changed="2016-08-01T14:58:48.5445083-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.iOS\..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\vorbisfile.h" changed="2016-08-01T14:58:48.5473712-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\lib\BufferEncoder.cpp" changed="2016-08-01T21:38:44.7978559-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\lib\OggBuffEnc.cpp" changed="2016-08-01T21:31:14.8870923-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\lib\BufferEncoder.h" changed="2016-08-01T14:58:23.8131296-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\lib\OggBuffEnc.h" changed="2016-08-01T21:31:47.0042131-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\ogg_ios_android\libogg\include\ogg\ogg.h" changed="2016-08-01T14:58:47.5511907-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\ogg_ios_android\libogg\include\ogg\os_types.h" changed="2016-08-01T14:58:47.5536857-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\codec.h" changed="2016-08-01T14:58:48.5404846-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\vorbisenc.h" changed="2016-08-01T14:58:48.5445083-05:00" />
+  <file path="C:\Code\consortya_libs\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\vorbisfile.h" changed="2016-08-01T14:58:48.5473712-05:00" />
+  <file path="C:\Code\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.iOS\ARM\Debug\OggEncBuffer.iOS.xcodeproj\project.pbxproj" changed="2016-07-31T12:09:32.1931455-05:00" />
+  <file path="C:\Code\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\lib\BufferEncoder.cpp" changed="2016-07-31T12:09:30.9724699-05:00" />
+  <file path="C:\Code\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\lib\OggBuffEnc.cpp" changed="2016-07-31T11:22:20.6775303-05:00" />
+  <file path="C:\Code\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\lib\BufferEncoder.h" changed="2016-07-31T12:04:04.5447978-05:00" />
+  <file path="C:\Code\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\lib\OggBuffEnc.h" changed="2016-07-31T11:22:10.576438-05:00" />
+  <file path="C:\Code\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\ogg_ios_android\libogg\include\ogg\ogg.h" changed="2016-07-31T11:04:32.8814784-05:00" />
+  <file path="C:\Code\ogg_enc_buffer\mobile\VS2015\OggEncBuffer\OggEncBuffer.Shared\..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\vorbisenc.h" changed="2016-07-31T11:04:33.7902089-05:00" />
+</payload>

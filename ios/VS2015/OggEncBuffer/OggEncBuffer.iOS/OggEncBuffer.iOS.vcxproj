@@ -34,6 +34,19 @@
       <Platform>x86</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\lib\BufferEncoder.h" />
+    <ClInclude Include="..\..\..\..\lib\OggBuffEnc.h" />
+    <ClInclude Include="..\..\..\..\ogg_ios_android\libogg\include\ogg\ogg.h" />
+    <ClInclude Include="..\..\..\..\ogg_ios_android\libogg\include\ogg\os_types.h" />
+    <ClInclude Include="..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\codec.h" />
+    <ClInclude Include="..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\vorbisenc.h" />
+    <ClInclude Include="..\..\..\..\ogg_ios_android\libvorbis\include\vorbis\vorbisfile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\lib\BufferEncoder.cpp" />
+    <ClCompile Include="..\..\..\..\lib\OggBuffEnc.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{a4c14175-0963-4b05-82d6-148fc24335d1}</ProjectGuid>
     <Keyword>iOS</Keyword>
@@ -85,25 +98,26 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings" />
-  <ImportGroup Label="Shared">
-    <Import Project="..\OggEncBuffer.Shared\OggEncBuffer.Shared.vcxitems" Label="Shared" />
-  </ImportGroup>
+  <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>..\..\..\..\ogg_ios_android\libogg\include\;..\..\..\..\ogg_ios_android\libvorbis\include\;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <IncludePath>..\..\..\..\ogg_ios_android\libogg\include\;..\..\..\..\ogg_ios_android\libvorbis\include\;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <IncludePath>..\..\..\..\ogg_ios_android\libogg\include\;..\..\..\..\ogg_ios_android\libvorbis\include\;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <IncludePath>..\..\..\..\ogg_ios_android\libogg\include;..\..\..\..\ogg_ios_android\libvorbis\include;</IncludePath>
+    <IncludePath>..\..\..\..\ogg_ios_android\libogg\include\;..\..\..\..\ogg_ios_android\libvorbis\include\;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
   </PropertyGroup>

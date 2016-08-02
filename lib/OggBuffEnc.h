@@ -2,14 +2,10 @@
 #pragma once
 
 //Functions to be exposed in these libraries
-
-extern "C" {
-		
-	extern bool InitEncoder();
+extern "C" bool InitEncoder();
 	
-	extern bool CloseEncoder();
+extern "C" bool CloseEncoder();
 	
-	// Length of encoded bytes
-	extern int EncodeBuffer(void* buffer, int length);
-}
+// Length of encoded bytes
+extern "C" int EncodeBuffer(void* buffer, int length);
 
